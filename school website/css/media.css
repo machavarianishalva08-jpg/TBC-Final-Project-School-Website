@@ -1,0 +1,42 @@
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 15px;
+    }
+
+    .services-grid {
+        flex-direction: column;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+    
+    .hero {
+        height: 300px;
+    }
+}
+@media (min-width: 768px) {
+    .about-page .container article {
+        padding: 42px 48px;
+ } }
+ @media (max-width: 640px) {
+    .newsletter-block { padding: 16px; }
+    .news-grid { gap: 12px; }
+    .news-item { padding: 14px; }
+}
