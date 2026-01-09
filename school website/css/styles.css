@@ -316,6 +316,52 @@ footer {
     color: #ccc;
 }
 
+.about-grid {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.about-column {
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+}
+.about-card {
+    background: var(--white);
+    padding: 24px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 8px 24px rgba(44,62,80,0.06);
+    box-shadow: 0 8px 24px rgba(44,62,80,0.06);
+}
+.about-image-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-image {
+    width: 80%;
+    max-width: 360px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    margin-top: -36px; /* pull up under the card */
+    transform: rotate(-6deg) translateX(-14px);
+}
+.about-image.right {
+    transform: rotate(6deg) translateX(14px);
+}
+
+.about-image.center {
+    transform: rotate(-6deg) translateX(40px);
+}
+
+@media (max-width: 880px) {
+    .about-image { transform: none; margin-top: 16px; width: 100%; max-width: 520px; }
+    .about-image.right { transform: none; }
+    .about-grid { flex-direction: column; }
+}
+
 header nav a.active {
     color: var(--primary-color);
     text-decoration: none;
