@@ -316,7 +316,6 @@ footer {
     color: #ccc;
 }
 
-/* Active navigation link styling (CSS-only) */
 header nav a.active {
     color: var(--primary-color);
     text-decoration: none;
